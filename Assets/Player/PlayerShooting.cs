@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerShooting : MonoBehaviour
 {
@@ -11,94 +12,237 @@ public class PlayerShooting : MonoBehaviour
     public bool holdToFire = false; // true = auto while hold, false = single-shot on press
 
     [Header("Input (optional)")]
-    public InputActionReference fireAction; // assign "Fire" action reference or use PlayerInput
-    public string fireActionName = "Fire";
+    public InputActionReference fireAction; // assign "Attack" action reference or use PlayerInput
+    public string fireActionName = "Attack";
+    public InputActionReference reloadAction; // assign "Reload" action reference or use PlayerInput
+    public string reloadActionName = "Reload";
+
+    [Header("Ammo")]
+    public int maxAmmo = 30;
+    public int currentAmmo = 30;
+    public int reserveAmmo = 90;
+    public float reloadTime = 1.5f;
+    public TMP_Text ammoText;
 
     InputAction runtimeFire;
+    InputAction runtimeReload;
     float nextFireTime;
+    bool runtimeHoldFire;
+    bool runtimeFireTriggered;
+    bool runtimeReloadRequested;
+    bool isReloading;
+    float reloadEndTime;
 
     void OnEnable()
     {
         // resolve runtimeFire: prefer explicit reference, else find in PlayerInput
+        var pi = GetComponent<PlayerInput>();
+
         if (fireAction != null && fireAction.action != null)
             runtimeFire = fireAction.action;
+        else if (pi != null && pi.actions != null)
+            runtimeFire = pi.actions.FindAction(fireActionName) ?? pi.actions.FindAction(pi.defaultActionMap + "/" + fireActionName);
+
+        if (reloadAction != null && reloadAction.action != null)
+            runtimeReload = reloadAction.action;
+        else if (pi != null && pi.actions != null)
+            runtimeReload = pi.actions.FindAction(reloadActionName) ?? pi.actions.FindAction(pi.defaultActionMap + "/" + reloadActionName);
+
+        if (runtimeFire != null)
+        {
+            runtimeFire.started += OnFireStarted;
+            runtimeFire.canceled += OnFireCanceled;
+            runtimeFire.performed += OnFirePerformed;
+            runtimeFire.Enable();
+        }
         else
         {
-            var pi = GetComponent<PlayerInput>();
-            if (pi != null && pi.actions != null)
-                runtimeFire = pi.actions.FindAction(fireActionName) ?? pi.actions.FindAction(pi.defaultActionMap + "/" + fireActionName);
+            Debug.LogWarning("[PlayerShooting] Fire action not found. Assign an InputActionReference or set up PlayerInput with an 'Attack' action.");
         }
 
-        if (runtimeFire != null) runtimeFire.Enable();
+        if (runtimeReload != null)
+        {
+            runtimeReload.performed += OnReloadPerformed;
+            runtimeReload.Enable();
+        }
+        else
+        {
+            Debug.LogWarning("[PlayerShooting] Reload action not found. Assign an InputActionReference or set up PlayerInput with a 'Reload' action.");
+        }
+
+        runtimeHoldFire = false;
+        runtimeFireTriggered = false;
+        runtimeReloadRequested = false;
+        isReloading = false;
+        reloadEndTime = 0f;
     }
 
     void OnDisable()
     {
-        if (runtimeFire != null) runtimeFire.Disable();
+        if (runtimeFire != null)
+        {
+            runtimeFire.started -= OnFireStarted;
+            runtimeFire.canceled -= OnFireCanceled;
+            runtimeFire.performed -= OnFirePerformed;
+            runtimeFire.Disable();
+        }
+
+        if (runtimeReload != null)
+        {
+            runtimeReload.performed -= OnReloadPerformed;
+            runtimeReload.Disable();
+        }
+    }
+
+    void OnFireStarted(InputAction.CallbackContext context)
+    {
+        if (holdToFire)
+            runtimeHoldFire = true;
+        else
+            runtimeFireTriggered = true;
+    }
+
+    void OnFireCanceled(InputAction.CallbackContext context)
+    {
+        if (holdToFire)
+            runtimeHoldFire = false;
+    }
+
+    void OnFirePerformed(InputAction.CallbackContext context)
+    {
+        if (!holdToFire)
+            runtimeFireTriggered = true;
+    }
+
+    void OnReloadPerformed(InputAction.CallbackContext context)
+    {
+        runtimeReloadRequested = true;
+    }
+
+    void Start()
+    {
+        if (currentAmmo <= 0)
+            currentAmmo = maxAmmo;
+
+        UpdateAmmoText();
+    }
+
+    void UpdateAmmoText()
+    {
+        if (ammoText == null) return;
+        ammoText.text = $"Ammo: {currentAmmo}/{maxAmmo} | Reserve: {reserveAmmo}";
+    }
+
+    public void AddAmmo(int amount)
+    {
+        if (amount <= 0) return;
+
+        // First fill current clip if needed, then add to reserve.
+        int missing = maxAmmo - currentAmmo;
+        int toCurrent = Mathf.Min(missing, amount);
+        currentAmmo += toCurrent;
+        amount -= toCurrent;
+        reserveAmmo += amount;
+
+        UpdateAmmoText();
+        Debug.Log($"[PlayerShooting] Picked up ammo. Current: {currentAmmo}/{maxAmmo}, Reserve: {reserveAmmo}");
     }
 
     void Update()
     {
-        bool wantFire = false;
-        bool firedThisFrame = false;
+        if (runtimeFire == null && runtimeReload == null)
+            return;
 
-        if (runtimeFire != null)
+        if (isReloading)
         {
-            if (holdToFire)
+            if (Time.time >= reloadEndTime)
             {
-                // ReadValue<float>() works for Button controls; treat >0.5 as pressed
-                float v = 0f;
-                try { v = runtimeFire.ReadValue<float>(); } catch { v = 0f; }
-                wantFire = v > 0.5f;
+                FinishReload();
             }
-            else
-            {
-                // single-press: use triggered
-                try { firedThisFrame = runtimeFire.triggered; }
-                catch { firedThisFrame = false; }
-            }
-        }
-        else
-        {
-            var mb = Mouse.current;
-            if (holdToFire)
-            {
-                if (mb != null) wantFire = mb.leftButton.isPressed;
-                else wantFire = Input.GetMouseButton(0);
-            }
-            else
-            {
-                if (mb != null) firedThisFrame = mb.leftButton.wasPressedThisFrame;
-                else firedThisFrame = Input.GetMouseButtonDown(0);
-            }
+            return;
         }
 
-        // decide firing
-        if (holdToFire && wantFire)
+        if (runtimeReloadRequested)
+        {
+            TryStartReload();
+        }
+
+        bool firedThisFrame = runtimeFireTriggered;
+
+        if (!holdToFire && firedThisFrame)
         {
             TryFire();
         }
-        else if (!holdToFire && firedThisFrame)
-        {
-            TryFire();
-        }
+
+        runtimeFireTriggered = false;
+        runtimeReloadRequested = false;
     }
 
     void TryFire()
     {
         if (Time.time < nextFireTime) return;
+        if (isReloading) return;
+        if (currentAmmo <= 0)
+        {
+            Debug.Log("[PlayerShooting] Out of ammo. Press Reload to refill.");
+            return;
+        }
+
         nextFireTime = Time.time + 1f / Mathf.Max(0.0001f, fireRate);
 
-        if (bulletPrefab == null || firePoint == null) return;
+        if (bulletPrefab == null || firePoint == null)
+        {
+            if (bulletPrefab == null)
+                Debug.LogWarning("[PlayerShooting] Bullet prefab is missing in inspector. Assign BulletPrefab to fire bullets.");
+            if (firePoint == null)
+                Debug.LogWarning("[PlayerShooting] Fire point is missing in inspector. Assign a FirePoint transform.");
+            return;
+        }
 
-        // instantiate bullet and set its velocity
+        currentAmmo--;
+        UpdateAmmoText();
+        Debug.Log($"[PlayerShooting] Fired at {Time.time:F2}. Ammo: {currentAmmo}/{maxAmmo} (reserve {reserveAmmo})");
+
         var b = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         var rb = b.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            // assume firePoint.up is forward for top-down; change to right if your sprite points right
-            Vector2 dir = firePoint.up; 
+            Vector2 dir = firePoint.up;
+            rb.gravityScale = 0f;
+            rb.freezeRotation = true;
             rb.linearVelocity = dir.normalized * bulletSpeed;
+            rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         }
     }
+
+    void TryStartReload()
+    {
+        if (isReloading) return;
+        if (currentAmmo >= maxAmmo)
+        {
+            Debug.Log("[PlayerShooting] Ammo full, reload not needed.");
+            return;
+        }
+        if (reserveAmmo <= 0)
+        {
+            Debug.Log("[PlayerShooting] No reserve ammo left.");
+            return;
+        }
+
+        isReloading = true;
+        reloadEndTime = Time.time + Mathf.Max(0.01f, reloadTime);
+        Debug.Log($"[PlayerShooting] Reloading... will finish at {reloadEndTime:F2}");
+    }
+
+    void FinishReload()
+    {
+        int needed = maxAmmo - currentAmmo;
+        int used = Mathf.Min(needed, reserveAmmo);
+        currentAmmo += used;
+        reserveAmmo -= used;
+        isReloading = false;
+        UpdateAmmoText();
+        Debug.Log($"[PlayerShooting] Reload complete. Ammo: {currentAmmo}/{maxAmmo}, reserve: {reserveAmmo}");
+    }
+
 }

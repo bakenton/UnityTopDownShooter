@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Users;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
     public float staminaDrainRate = 1.5f; // per second while sprinting
     public float staminaRegenRate = 1f;   // per second when not sprinting
     public float minSprintStamina = 0.1f; // minimum to allow sprint
+    public Image staminaBarFill;
 
     Rigidbody2D rb;
     Vector2 moveInput;
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour
         rb.freezeRotation = true;
 
         currentStamina = maxStamina;
+        UpdateStaminaUI();
     }
 
     void OnEnable()
@@ -129,6 +132,7 @@ public class PlayerController : MonoBehaviour
 
         // handle stamina + aiming
         HandleStamina(Time.deltaTime);
+        UpdateStaminaUI();
         HandleLook();
     }
 
@@ -155,6 +159,12 @@ public class PlayerController : MonoBehaviour
             currentStamina += staminaRegenRate * dt;
             if (currentStamina > maxStamina) currentStamina = maxStamina;
         }
+    }
+
+    void UpdateStaminaUI()
+    {
+        if (staminaBarFill == null) return;
+        staminaBarFill.fillAmount = GetStaminaNormalized();
     }
 
     Vector2 ReadMoveFromKeyboardBindings()
