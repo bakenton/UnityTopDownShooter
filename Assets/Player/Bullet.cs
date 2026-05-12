@@ -3,6 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float lifeTime = 3f;
+    public int damage = 25;
     public LayerMask hitMask; // optional: what layers bullet can hit
     public GameObject hitEffectPrefab; // optional visual
 
@@ -20,14 +21,18 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // optional: ignore triggers or own player layer as needed
+        if (other.isTrigger) return;
         if (hitMask != 0 && ((1 << other.gameObject.layer) & hitMask) == 0) return;
 
         // spawn hit effect
         if (hitEffectPrefab != null)
             Instantiate(hitEffectPrefab, transform.position, Quaternion.identity);
 
-        // add damage logic here (if target has health component, etc.)
+        var enemy = other.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
 
         Destroy(gameObject);
     }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,6 +10,12 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth = 100;
     public Image healthBarFill;
     public TMP_Text healthText;
+
+    [Header("Death")]
+    public float deathDelay = 1f;
+    public string deathSceneName = "DeathScreen";
+
+    bool isDead = false;
 
     void Awake()
     {
@@ -28,10 +35,28 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        if (amount <= 0) return;
+        if (amount <= 0 || isDead) return;
         currentHealth = Mathf.Max(0, currentHealth - amount);
         UpdateHealthUI();
         Debug.Log($"[PlayerHealth] Took {amount} damage. Health: {currentHealth}/{maxHealth}");
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        isDead = true;
+        gameObject.SetActive(false);
+        Debug.Log("[PlayerHealth] Player died!");
+        Invoke(nameof(LoadDeathScene), deathDelay);
+    }
+
+    void LoadDeathScene()
+    {
+        SceneManager.LoadScene(deathSceneName);
     }
 
     void UpdateHealthUI()

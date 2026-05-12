@@ -4,12 +4,14 @@ public enum PickupType
 {
     Ammo,
     Health,
+    Key,
 }
 
 public class PickupItem : MonoBehaviour
 {
     public PickupType pickupType = PickupType.Ammo;
     public int amount = 15;
+    public string keyName = "Key"; // for Key type
     public bool destroyOnPickup = true;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -31,6 +33,15 @@ public class PickupItem : MonoBehaviour
             if (health != null)
             {
                 health.Heal(amount);
+                PickupCollected();
+            }
+        }
+        else if (pickupType == PickupType.Key)
+        {
+            var inventory = other.GetComponent<Inventory>();
+            if (inventory != null)
+            {
+                inventory.AddKey(keyName);
                 PickupCollected();
             }
         }
