@@ -19,15 +19,15 @@ MonoBehaviour:
   - m_Id: 0
     m_Sprites:
     - {fileID: 70345852487738077, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
-    - {fileID: 106859011, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
-    - {fileID: 251776056, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
-    - {fileID: 1808577159, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
-    - {fileID: -1614678739, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
-    - {fileID: -1893466316, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
-    - {fileID: 1529339250, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
-    - {fileID: 384710870, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
     - {fileID: -1670732605, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
-    - {fileID: 1535874924, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
+    - {fileID: -1229549716, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
+    - {fileID: 106859011, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
+    - {fileID: -1655729322, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
+    - {fileID: -231164495, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
+    - {fileID: 1838670790, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
+    - {fileID: -1320986048, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
+    - {fileID: 644582021, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
+    - {fileID: 749622670, guid: b7c6ddf0403b50a4fbb0499f61a367a7, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1

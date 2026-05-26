@@ -19,6 +19,16 @@ public class PlayerController : MonoBehaviour
     [Tooltip("0 = instant, >0 = smoothing speed")]
     public float aimSmoothing = 0f;
 
+    [Header("Animation Sprites")]
+    public Sprite idleFront;
+    public Sprite idleBack;
+    public Sprite idleLeft;
+    public Sprite idleRight;
+    public Sprite runFront;
+    public Sprite runBack;
+    public Sprite runLeft;
+    public Sprite runRight;
+
     [Header("Sprint / Stamina")]
     [Tooltip("Перетащите Sprint action (Button) сюда или оставьте пустым — будет использован Left Shift")]
     public InputActionReference sprintAction;
@@ -39,12 +49,22 @@ public class PlayerController : MonoBehaviour
     bool wantSprint;
     bool isSprinting;
 
+    private SpriteRenderer spriteRenderer;
+    private PlayerShooting playerShooting;
+    private Vector2 lastLookDirection = Vector2.down;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         if (rb == null) rb = gameObject.AddComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
         rb.freezeRotation = true;
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        playerShooting = GetComponent<PlayerShooting>();
 
         currentStamina = maxStamina;
         UpdateStaminaUI();
@@ -201,21 +221,49 @@ public class PlayerController : MonoBehaviour
             mouseScreen = Input.mousePosition;
         }
 
-        Vector3 mouseWorld = useCam.ScreenToWorldPoint(new Vector3(mouseScreen.x, mouseScreen.y, useCam.nearClipPlane));
+        float cameraToPlayerDistance = transform.position.z - useCam.transform.position.z;
+        Vector3 mouseWorld = useCam.ScreenToWorldPoint(new Vector3(mouseScreen.x, mouseScreen.y, cameraToPlayerDistance));
         Vector2 dir = (mouseWorld - transform.position);
         if (dir.sqrMagnitude < 0.0001f) return;
+
+        dir.Normalize();
+        lastLookDirection = dir;
 
         float targetAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
         targetAngle += aimRotationOffset;
 
-        if (aimSmoothing <= 0f)
+        if (playerShooting != null && playerShooting.firePoint != null)
         {
-            transform.rotation = Quaternion.Euler(0f, 0f, targetAngle);
+            playerShooting.firePoint.rotation = Quaternion.Euler(0f, 0f, targetAngle);
+        }
+
+        UpdateAnimation(dir);
+    }
+
+    void UpdateAnimation(Vector2 lookDirection)
+    {
+        if (spriteRenderer == null) return;
+
+        bool moving = moveInput.sqrMagnitude > 0.1f;
+        Sprite nextSprite = null;
+
+        if (Mathf.Abs(lookDirection.x) > Mathf.Abs(lookDirection.y))
+        {
+            if (lookDirection.x > 0f)
+                nextSprite = moving ? runRight : idleRight;
+            else
+                nextSprite = moving ? runLeft : idleLeft;
         }
         else
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0f, 0f, targetAngle), Time.deltaTime * aimSmoothing);
+            if (lookDirection.y > 0f)
+                nextSprite = moving ? runBack : idleBack;
+            else
+                nextSprite = moving ? runFront : idleFront;
         }
+
+        if (nextSprite != null)
+            spriteRenderer.sprite = nextSprite;
     }
 
     // публичный доступ к уровню стамины для UI

@@ -1,0 +1,1573 @@
+fileFormatVersion: 2
+guid: 06d6b55cd7a510f4ba0bf8fcc7965bdd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3451743334635379501
+    second: Shelter_Icons_16x16_0
+  - first:
+      213: 6671943124608554025
+    second: Shelter_Icons_16x16_1
+  - first:
+      213: -1684022890823667881
+    second: Shelter_Icons_16x16_2
+  - first:
+      213: 7428701273353999388
+    second: Shelter_Icons_16x16_3
+  - first:
+      213: -6643127814768411013
+    second: Shelter_Icons_16x16_4
+  - first:
+      213: -372844055061334135
+    second: Shelter_Icons_16x16_5
+  - first:
+      213: -2644429650344453761
+    second: Shelter_Icons_16x16_6
+  - first:
+      213: 8616609351851237054
+    second: Shelter_Icons_16x16_7
+  - first:
+      213: -202361085996668167
+    second: Shelter_Icons_16x16_8
+  - first:
+      213: 958666535100780678
+    second: Shelter_Icons_16x16_9
+  - first:
+      213: -8407989676194539361
+    second: Shelter_Icons_16x16_10
+  - first:
+      213: -3173479150193565223
+    second: Shelter_Icons_16x16_11
+  - first:
+      213: -5588163043558089138
+    second: Shelter_Icons_16x16_12
+  - first:
+      213: 2887381486244862391
+    second: Shelter_Icons_16x16_13
+  - first:
+      213: 1234326503381465962
+    second: Shelter_Icons_16x16_14
+  - first:
+      213: -1322110910944592788
+    second: Shelter_Icons_16x16_15
+  - first:
+      213: -2309602769531536868
+    second: Shelter_Icons_16x16_16
+  - first:
+      213: -789301777806221956
+    second: Shelter_Icons_16x16_17
+  - first:
+      213: -3304375446566637371
+    second: Shelter_Icons_16x16_18
+  - first:
+      213: -3810613833613729523
+    second: Shelter_Icons_16x16_19
+  - first:
+      213: 908909228373718096
+    second: Shelter_Icons_16x16_20
+  - first:
+      213: -8707163827661213793
+    second: Shelter_Icons_16x16_21
+  - first:
+      213: -6466768122120783457
+    second: Shelter_Icons_16x16_22
+  - first:
+      213: 8502484272506216673
+    second: Shelter_Icons_16x16_23
+  - first:
+      213: 2395560934095635048
+    second: Shelter_Icons_16x16_24
+  - first:
+      213: 7675505913817943842
+    second: Shelter_Icons_16x16_25
+  - first:
+      213: 6379589996260659620
+    second: Shelter_Icons_16x16_26
+  - first:
+      213: 4411557017601564553
+    second: Shelter_Icons_16x16_27
+  - first:
+      213: 2326418054561591154
+    second: Shelter_Icons_16x16_28
+  - first:
+      213: 5648901848320032165
+    second: Shelter_Icons_16x16_29
+  - first:
+      213: -8320084787435377592
+    second: Shelter_Icons_16x16_30
+  - first:
+      213: 8377265202967114468
+    second: Shelter_Icons_16x16_31
+  - first:
+      213: 5633108243291786842
+    second: Shelter_Icons_16x16_32
+  - first:
+      213: -8882168713209583722
+    second: Shelter_Icons_16x16_33
+  - first:
+      213: 5946840679615492686
+    second: Shelter_Icons_16x16_34
+  - first:
+      213: -1614164619708350243
+    second: Shelter_Icons_16x16_35
+  - first:
+      213: 2758274614025334535
+    second: Shelter_Icons_16x16_36
+  - first:
+      213: 6378459752058253520
+    second: Shelter_Icons_16x16_37
+  - first:
+      213: -3229331296399387452
+    second: Shelter_Icons_16x16_38
+  - first:
+      213: 6572393972842886663
+    second: Shelter_Icons_16x16_39
+  - first:
+      213: -8399670572333059834
+    second: Shelter_Icons_16x16_40
+  - first:
+      213: -8595571074831835764
+    second: Shelter_Icons_16x16_41
+  - first:
+      213: -7058050867560572154
+    second: Shelter_Icons_16x16_42
+  - first:
+      213: -2329998818439211956
+    second: Shelter_Icons_16x16_43
+  - first:
+      213: -8157350931203504732
+    second: Shelter_Icons_16x16_44
+  - first:
+      213: -7113330397723305169
+    second: Shelter_Icons_16x16_45
+  - first:
+      213: -689116374373480350
+    second: Shelter_Icons_16x16_46
+  - first:
+      213: -7809918716092773195
+    second: Shelter_Icons_16x16_47
+  - first:
+      213: 1894133809965400071
+    second: Shelter_Icons_16x16_48
+  - first:
+      213: -7572016489949660429
+    second: Shelter_Icons_16x16_49
+  - first:
+      213: 165553098657706110
+    second: Shelter_Icons_16x16_50
+  - first:
+      213: -6040858337183958242
+    second: Shelter_Icons_16x16_51
+  - first:
+      213: 4396272628033950089
+    second: Shelter_Icons_16x16_52
+  - first:
+      213: -115825869135045995
+    second: Shelter_Icons_16x16_53
+  - first:
+      213: 1107456035263648477
+    second: Shelter_Icons_16x16_54
+  - first:
+      213: 8668409568679697522
+    second: Shelter_Icons_16x16_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d46c3ba9b1f810d0800000000000000
+      internalID: -3451743334635379501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92417ef1ce0879c50800000000000000
+      internalID: 6671943124608554025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 97
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f24d66a1621a8e0800000000000000
+      internalID: -1684022890823667881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 100
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14d1ccf27c081760800000000000000
+      internalID: 7428701273353999388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_4
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 105
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e3633037edec3a0800000000000000
+      internalID: -6643127814768411013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_5
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 97
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987f37dae4463daf0800000000000000
+      internalID: -372844055061334135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_6
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 97
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7955b96e391d4bd0800000000000000
+      internalID: -2644429650344453761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 97
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebed6618d88549770800000000000000
+      internalID: 8616609351851237054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 96
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa6ec81aa1113df0800000000000000
+      internalID: -202361085996668167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 102
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6809cba622edd4d00800000000000000
+      internalID: 958666535100780678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98d54bdfe1d05b80800000000000000
+      internalID: -8407989676194539361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1aa96d68985f3d0800000000000000
+      internalID: -3173479150193565223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 81
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e11c9b15bd272b0800000000000000
+      internalID: -5588163043558089138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 86
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b91aaae92a021820800000000000000
+      internalID: 2887381486244862391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_14
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 81
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6bf6e24a65312110800000000000000
+      internalID: 1234326503381465962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_15
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 86
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6cba7f912be6ade0800000000000000
+      internalID: -1322110910944592788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_16
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 81
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a70d59484a2ffd0800000000000000
+      internalID: -2309602769531536868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_17
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 81
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d96490736db05f0800000000000000
+      internalID: -789301777806221956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 82
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c07fd6e9008422d0800000000000000
+      internalID: -3304375446566637371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01a34768eafd1bc0800000000000000
+      internalID: -3810613833613729523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_20
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0543a4aa0281d9c00800000000000000
+      internalID: 908909228373718096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f6f1b91a0f92780800000000000000
+      internalID: -8707163827661213793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_22
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99bb24c7ac6146a0800000000000000
+      internalID: -6466768122120783457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_23
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 65
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e02413d564eef570800000000000000
+      internalID: 8502484272506216673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_24
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 65
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862c2923afdbe3120800000000000000
+      internalID: 2395560934095635048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f478846ffd48a60800000000000000
+      internalID: 7675505913817943842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a190c31d4bd88850800000000000000
+      internalID: 6379589996260659620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 48
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fd58cebbff83d30800000000000000
+      internalID: 4411557017601564553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27fe23d05e8194020800000000000000
+      internalID: 2326418054561591154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5adb9284d4ee46e40800000000000000
+      internalID: 5648901848320032165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c68cfa7fe198c80800000000000000
+      internalID: -8320084787435377592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e278144156024470800000000000000
+      internalID: 8377265202967114468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_32
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e4bbe0a12dc2e40800000000000000
+      internalID: 5633108243291786842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697ed067d923cb480800000000000000
+      internalID: -8882168713209583722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42f254271c678250800000000000000
+      internalID: 5946840679615492686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_35
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0c741a4d55999e0800000000000000
+      internalID: -1614164619708350243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_36
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f25f1c52c574620800000000000000
+      internalID: 2758274614025334535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0fe879957d48850800000000000000
+      internalID: 6378459752058253520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c41010bb4c1f23d0800000000000000
+      internalID: -3229331296399387452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_39
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706f73b0f75d53b50800000000000000
+      internalID: 6572393972842886663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60139c92e106e6b80800000000000000
+      internalID: -8399670572333059834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_41
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 17
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d960316a566b880800000000000000
+      internalID: -8595571074831835764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_42
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 20
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b1a609124cc0e90800000000000000
+      internalID: -7058050867560572154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_43
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44d9d36b6e2aafd0800000000000000
+      internalID: -2329998818439211956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_44
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5c96d2c844bce80800000000000000
+      internalID: -8157350931203504732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bd6b9f0bf584d90800000000000000
+      internalID: -7113330397723305169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_46
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26840900f44cf66f0800000000000000
+      internalID: -689116374373480350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc8d927e489d9390800000000000000
+      internalID: -7809918716092773195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7008b042aa0594a10800000000000000
+      internalID: 1894133809965400071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_49
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa7623ee1bcae690800000000000000
+      internalID: -7572016489949660429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_50
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 5
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7035f48aa92c4200800000000000000
+      internalID: 165553098657706110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_51
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b71b1295f8a2ca0800000000000000
+      internalID: -6040858337183958242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_52
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9819cb9a9a2b20d30800000000000000
+      internalID: 4396272628033950089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a97665cf0846ef0800000000000000
+      internalID: -115825869135045995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_54
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2904285697e5f00800000000000000
+      internalID: 1107456035263648477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Icons_16x16_55
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c10c453906c4870800000000000000
+      internalID: 8668409568679697522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Shelter_Icons_16x16_0: -3451743334635379501
+      Shelter_Icons_16x16_1: 6671943124608554025
+      Shelter_Icons_16x16_10: -8407989676194539361
+      Shelter_Icons_16x16_11: -3173479150193565223
+      Shelter_Icons_16x16_12: -5588163043558089138
+      Shelter_Icons_16x16_13: 2887381486244862391
+      Shelter_Icons_16x16_14: 1234326503381465962
+      Shelter_Icons_16x16_15: -1322110910944592788
+      Shelter_Icons_16x16_16: -2309602769531536868
+      Shelter_Icons_16x16_17: -789301777806221956
+      Shelter_Icons_16x16_18: -3304375446566637371
+      Shelter_Icons_16x16_19: -3810613833613729523
+      Shelter_Icons_16x16_2: -1684022890823667881
+      Shelter_Icons_16x16_20: 908909228373718096
+      Shelter_Icons_16x16_21: -8707163827661213793
+      Shelter_Icons_16x16_22: -6466768122120783457
+      Shelter_Icons_16x16_23: 8502484272506216673
+      Shelter_Icons_16x16_24: 2395560934095635048
+      Shelter_Icons_16x16_25: 7675505913817943842
+      Shelter_Icons_16x16_26: 6379589996260659620
+      Shelter_Icons_16x16_27: 4411557017601564553
+      Shelter_Icons_16x16_28: 2326418054561591154
+      Shelter_Icons_16x16_29: 5648901848320032165
+      Shelter_Icons_16x16_3: 7428701273353999388
+      Shelter_Icons_16x16_30: -8320084787435377592
+      Shelter_Icons_16x16_31: 8377265202967114468
+      Shelter_Icons_16x16_32: 5633108243291786842
+      Shelter_Icons_16x16_33: -8882168713209583722
+      Shelter_Icons_16x16_34: 5946840679615492686
+      Shelter_Icons_16x16_35: -1614164619708350243
+      Shelter_Icons_16x16_36: 2758274614025334535
+      Shelter_Icons_16x16_37: 6378459752058253520
+      Shelter_Icons_16x16_38: -3229331296399387452
+      Shelter_Icons_16x16_39: 6572393972842886663
+      Shelter_Icons_16x16_4: -6643127814768411013
+      Shelter_Icons_16x16_40: -8399670572333059834
+      Shelter_Icons_16x16_41: -8595571074831835764
+      Shelter_Icons_16x16_42: -7058050867560572154
+      Shelter_Icons_16x16_43: -2329998818439211956
+      Shelter_Icons_16x16_44: -8157350931203504732
+      Shelter_Icons_16x16_45: -7113330397723305169
+      Shelter_Icons_16x16_46: -689116374373480350
+      Shelter_Icons_16x16_47: -7809918716092773195
+      Shelter_Icons_16x16_48: 1894133809965400071
+      Shelter_Icons_16x16_49: -7572016489949660429
+      Shelter_Icons_16x16_5: -372844055061334135
+      Shelter_Icons_16x16_50: 165553098657706110
+      Shelter_Icons_16x16_51: -6040858337183958242
+      Shelter_Icons_16x16_52: 4396272628033950089
+      Shelter_Icons_16x16_53: -115825869135045995
+      Shelter_Icons_16x16_54: 1107456035263648477
+      Shelter_Icons_16x16_55: 8668409568679697522
+      Shelter_Icons_16x16_6: -2644429650344453761
+      Shelter_Icons_16x16_7: 8616609351851237054
+      Shelter_Icons_16x16_8: -202361085996668167
+      Shelter_Icons_16x16_9: 958666535100780678
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

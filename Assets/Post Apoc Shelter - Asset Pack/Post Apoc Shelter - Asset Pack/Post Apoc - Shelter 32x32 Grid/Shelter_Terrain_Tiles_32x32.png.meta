@@ -1,0 +1,2691 @@
+fileFormatVersion: 2
+guid: e900799ec6e5f4b4eb370dd625ff613e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4507287306829265120
+    second: Shelter_Terrain_Tiles_32x32_0
+  - first:
+      213: 141930784726266854
+    second: Shelter_Terrain_Tiles_32x32_1
+  - first:
+      213: 880236863643225715
+    second: Shelter_Terrain_Tiles_32x32_2
+  - first:
+      213: 6320509314578505916
+    second: Shelter_Terrain_Tiles_32x32_3
+  - first:
+      213: 3802099791044933360
+    second: Shelter_Terrain_Tiles_32x32_4
+  - first:
+      213: 5227577204359471211
+    second: Shelter_Terrain_Tiles_32x32_5
+  - first:
+      213: -7108054704106434351
+    second: Shelter_Terrain_Tiles_32x32_6
+  - first:
+      213: 4910860270846205862
+    second: Shelter_Terrain_Tiles_32x32_7
+  - first:
+      213: 934554367629280698
+    second: Shelter_Terrain_Tiles_32x32_8
+  - first:
+      213: -8511798119157959288
+    second: Shelter_Terrain_Tiles_32x32_9
+  - first:
+      213: 8812197838070356849
+    second: Shelter_Terrain_Tiles_32x32_10
+  - first:
+      213: -7677888075186890953
+    second: Shelter_Terrain_Tiles_32x32_11
+  - first:
+      213: -4105795205898198270
+    second: Shelter_Terrain_Tiles_32x32_12
+  - first:
+      213: -3832991428275924765
+    second: Shelter_Terrain_Tiles_32x32_13
+  - first:
+      213: 4633432914596175296
+    second: Shelter_Terrain_Tiles_32x32_14
+  - first:
+      213: 1427160917980742626
+    second: Shelter_Terrain_Tiles_32x32_15
+  - first:
+      213: 6381126124474985340
+    second: Shelter_Terrain_Tiles_32x32_16
+  - first:
+      213: 8428472054632350667
+    second: Shelter_Terrain_Tiles_32x32_17
+  - first:
+      213: 3136806718598923844
+    second: Shelter_Terrain_Tiles_32x32_18
+  - first:
+      213: -2380161621732954250
+    second: Shelter_Terrain_Tiles_32x32_19
+  - first:
+      213: -5654783228407063004
+    second: Shelter_Terrain_Tiles_32x32_20
+  - first:
+      213: 5457992563197926314
+    second: Shelter_Terrain_Tiles_32x32_21
+  - first:
+      213: -6362834920223306797
+    second: Shelter_Terrain_Tiles_32x32_22
+  - first:
+      213: 7137896496906225493
+    second: Shelter_Terrain_Tiles_32x32_23
+  - first:
+      213: 7462984217241614407
+    second: Shelter_Terrain_Tiles_32x32_24
+  - first:
+      213: -115442681366282247
+    second: Shelter_Terrain_Tiles_32x32_25
+  - first:
+      213: -6355494605984690349
+    second: Shelter_Terrain_Tiles_32x32_26
+  - first:
+      213: -4255834432204008187
+    second: Shelter_Terrain_Tiles_32x32_27
+  - first:
+      213: -954336485350767002
+    second: Shelter_Terrain_Tiles_32x32_28
+  - first:
+      213: -2666722499432769753
+    second: Shelter_Terrain_Tiles_32x32_29
+  - first:
+      213: -1322735814890988292
+    second: Shelter_Terrain_Tiles_32x32_30
+  - first:
+      213: 1365581026108568047
+    second: Shelter_Terrain_Tiles_32x32_31
+  - first:
+      213: 2850213118910014932
+    second: Shelter_Terrain_Tiles_32x32_32
+  - first:
+      213: -7848233794632556828
+    second: Shelter_Terrain_Tiles_32x32_33
+  - first:
+      213: 2238046624750386468
+    second: Shelter_Terrain_Tiles_32x32_34
+  - first:
+      213: -563021438213100288
+    second: Shelter_Terrain_Tiles_32x32_35
+  - first:
+      213: 120230300112767282
+    second: Shelter_Terrain_Tiles_32x32_36
+  - first:
+      213: 5569672746740867588
+    second: Shelter_Terrain_Tiles_32x32_37
+  - first:
+      213: -5223265838746622654
+    second: Shelter_Terrain_Tiles_32x32_38
+  - first:
+      213: -8078122566908753385
+    second: Shelter_Terrain_Tiles_32x32_39
+  - first:
+      213: -4277219682314710678
+    second: Shelter_Terrain_Tiles_32x32_40
+  - first:
+      213: 6012345032824831963
+    second: Shelter_Terrain_Tiles_32x32_41
+  - first:
+      213: 2745144599754828241
+    second: Shelter_Terrain_Tiles_32x32_42
+  - first:
+      213: -6690946997590540789
+    second: Shelter_Terrain_Tiles_32x32_43
+  - first:
+      213: 2108021826445868002
+    second: Shelter_Terrain_Tiles_32x32_44
+  - first:
+      213: -5137277236670282940
+    second: Shelter_Terrain_Tiles_32x32_45
+  - first:
+      213: -6590658614140840417
+    second: Shelter_Terrain_Tiles_32x32_46
+  - first:
+      213: 3915397430223454631
+    second: Shelter_Terrain_Tiles_32x32_47
+  - first:
+      213: -1192923539132988266
+    second: Shelter_Terrain_Tiles_32x32_48
+  - first:
+      213: -8959743313624416933
+    second: Shelter_Terrain_Tiles_32x32_49
+  - first:
+      213: 2176960981113308518
+    second: Shelter_Terrain_Tiles_32x32_50
+  - first:
+      213: -6387286999498753112
+    second: Shelter_Terrain_Tiles_32x32_51
+  - first:
+      213: -5519440016801507042
+    second: Shelter_Terrain_Tiles_32x32_52
+  - first:
+      213: 5646574693988349869
+    second: Shelter_Terrain_Tiles_32x32_53
+  - first:
+      213: -7806367167211165752
+    second: Shelter_Terrain_Tiles_32x32_54
+  - first:
+      213: -161973752089694445
+    second: Shelter_Terrain_Tiles_32x32_55
+  - first:
+      213: 8185686683009503556
+    second: Shelter_Terrain_Tiles_32x32_56
+  - first:
+      213: -5511513789518678493
+    second: Shelter_Terrain_Tiles_32x32_57
+  - first:
+      213: 607852329095136883
+    second: Shelter_Terrain_Tiles_32x32_58
+  - first:
+      213: -1805200768233926593
+    second: Shelter_Terrain_Tiles_32x32_59
+  - first:
+      213: -1645307873688640203
+    second: Shelter_Terrain_Tiles_32x32_60
+  - first:
+      213: 7236732051240224622
+    second: Shelter_Terrain_Tiles_32x32_61
+  - first:
+      213: 7840432070746815049
+    second: Shelter_Terrain_Tiles_32x32_62
+  - first:
+      213: 8966850960287138723
+    second: Shelter_Terrain_Tiles_32x32_63
+  - first:
+      213: 1098326237162160554
+    second: Shelter_Terrain_Tiles_32x32_64
+  - first:
+      213: 1710214283914077443
+    second: Shelter_Terrain_Tiles_32x32_65
+  - first:
+      213: -5536584932338210621
+    second: Shelter_Terrain_Tiles_32x32_66
+  - first:
+      213: 7520293814311846681
+    second: Shelter_Terrain_Tiles_32x32_67
+  - first:
+      213: -7083132698686199279
+    second: Shelter_Terrain_Tiles_32x32_68
+  - first:
+      213: 7079972933646232386
+    second: Shelter_Terrain_Tiles_32x32_69
+  - first:
+      213: 3086317059646544030
+    second: Shelter_Terrain_Tiles_32x32_70
+  - first:
+      213: 4307086784396862978
+    second: Shelter_Terrain_Tiles_32x32_71
+  - first:
+      213: 3156230032221582546
+    second: Shelter_Terrain_Tiles_32x32_72
+  - first:
+      213: 6271747583610972754
+    second: Shelter_Terrain_Tiles_32x32_73
+  - first:
+      213: 3915886437516073522
+    second: Shelter_Terrain_Tiles_32x32_74
+  - first:
+      213: 1591249114988849067
+    second: Shelter_Terrain_Tiles_32x32_75
+  - first:
+      213: 3035041857281630333
+    second: Shelter_Terrain_Tiles_32x32_76
+  - first:
+      213: -8626277695447467717
+    second: Shelter_Terrain_Tiles_32x32_77
+  - first:
+      213: -6708517458844385211
+    second: Shelter_Terrain_Tiles_32x32_78
+  - first:
+      213: -7293384506412526358
+    second: Shelter_Terrain_Tiles_32x32_79
+  - first:
+      213: -2516459866850730868
+    second: Shelter_Terrain_Tiles_32x32_80
+  - first:
+      213: 371547745336246875
+    second: Shelter_Terrain_Tiles_32x32_81
+  - first:
+      213: -689971266923820348
+    second: Shelter_Terrain_Tiles_32x32_82
+  - first:
+      213: -1992876309602850780
+    second: Shelter_Terrain_Tiles_32x32_83
+  - first:
+      213: 4163686219016983496
+    second: Shelter_Terrain_Tiles_32x32_84
+  - first:
+      213: 9112604197245366364
+    second: Shelter_Terrain_Tiles_32x32_85
+  - first:
+      213: 4408555076003712116
+    second: Shelter_Terrain_Tiles_32x32_86
+  - first:
+      213: -4336813487533500313
+    second: Shelter_Terrain_Tiles_32x32_87
+  - first:
+      213: -5920949277726838261
+    second: Shelter_Terrain_Tiles_32x32_88
+  - first:
+      213: -4415018405939158194
+    second: Shelter_Terrain_Tiles_32x32_89
+  - first:
+      213: -9213495667616213195
+    second: Shelter_Terrain_Tiles_32x32_90
+  - first:
+      213: -7386974138177078078
+    second: Shelter_Terrain_Tiles_32x32_91
+  - first:
+      213: 7346401329887974035
+    second: Shelter_Terrain_Tiles_32x32_92
+  - first:
+      213: -894424299286320495
+    second: Shelter_Terrain_Tiles_32x32_93
+  - first:
+      213: 3429644034254569871
+    second: Shelter_Terrain_Tiles_32x32_94
+  - first:
+      213: -9096522976402109709
+    second: Shelter_Terrain_Tiles_32x32_95
+  - first:
+      213: -4451064995385892390
+    second: Shelter_Terrain_Tiles_32x32_96
+  - first:
+      213: 2594475926318904262
+    second: Shelter_Terrain_Tiles_32x32_97
+  - first:
+      213: 7732092282528301679
+    second: Shelter_Terrain_Tiles_32x32_98
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 73
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e87f28cce91d8e30800000000000000
+      internalID: 4507287306829265120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 503
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e33d46fb4d38f100800000000000000
+      internalID: 141930784726266854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 495
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e88a783ca373c00800000000000000
+      internalID: 880236863643225715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 95
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0effeebb5f6b750800000000000000
+      internalID: 6320509314578505916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_4
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 418
+        width: 109
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6f1d59d95c3c430800000000000000
+      internalID: 3802099791044933360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_5
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 419
+        width: 28
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60a6cd35c51c8840800000000000000
+      internalID: 5227577204359471211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 431
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d011bd18ed1b5d90800000000000000
+      internalID: -7108054704106434351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_7
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 488
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afdd51c561e62440800000000000000
+      internalID: 4910860270846205862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 494
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab545d1fe3438fc00800000000000000
+      internalID: 934554367629280698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_9
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 431
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88570c345b400e980800000000000000
+      internalID: -8511798119157959288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 481
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b16a4ae373b4a70800000000000000
+      internalID: 8812197838070356849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_11
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 472
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737174d8979a27590800000000000000
+      internalID: -7677888075186890953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_12
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 464
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203afef73094507c0800000000000000
+      internalID: -4105795205898198270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_13
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 457
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e01f72aa9a7ecac0800000000000000
+      internalID: -3832991428275924765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 462
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd9b15dfa24d4040800000000000000
+      internalID: 4633432914596175296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_15
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 450
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e300912b4b4ec310800000000000000
+      internalID: 1427160917980742626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_16
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 394
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7beb4cc6605e8850800000000000000
+      internalID: 6381126124474985340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_17
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc30baf7da2f7f470800000000000000
+      internalID: 8428472054632350667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 391
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446c52f471d288b20800000000000000
+      internalID: 3136806718598923844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_19
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 399
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fe69c9d97f7fed0800000000000000
+      internalID: -2380161621732954250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_20
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 387
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ed5f43d9c2681b0800000000000000
+      internalID: -5654783228407063004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_21
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 387
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabd22c815faebb40800000000000000
+      internalID: 5457992563197926314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_22
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 395
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db83af0a5ba2b7a0800000000000000
+      internalID: -6362834920223306797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_23
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 386
+        width: 90
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557c995bb07ee0360800000000000000
+      internalID: 7137896496906225493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_24
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 375
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7487801ea98d19760800000000000000
+      internalID: 7462984217241614407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_25
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 367
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff7e313e7dd56ef0800000000000000
+      internalID: -115442681366282247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_26
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 358
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f0f56245fbcc7a0800000000000000
+      internalID: -6355494605984690349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_27
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 354
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5059a9dd12d30f4c0800000000000000
+      internalID: -4255834432204008187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_28
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 371
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 666097ad50481c2f0800000000000000
+      internalID: -954336485350767002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_29
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 303
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72794c20406edfad0800000000000000
+      internalID: -2666722499432769753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_30
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 360
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc5cb5d8c2b4ade0800000000000000
+      internalID: -1322735814890988292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 366
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1f63545b483f210800000000000000
+      internalID: 1365581026108568047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_32
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 303
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d52ac60bbdfd8720800000000000000
+      internalID: 2850213118910014932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_33
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 353
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eed5bc02f8751390800000000000000
+      internalID: -7848233794632556828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_34
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 344
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d320b2c832f0f10800000000000000
+      internalID: 2238046624750386468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_35
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 336
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00de0662cfebf28f0800000000000000
+      internalID: -563021438213100288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_36
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 258
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239c57922d42ba100800000000000000
+      internalID: 120230300112767282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_37
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 258
+        width: 28
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 402e9a09ad37b4d40800000000000000
+      internalID: 5569672746740867588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_38
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 329
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245231ac46b3387b0800000000000000
+      internalID: -5223265838746622654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_39
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 334
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a465b335eb4ef80800000000000000
+      internalID: -8078122566908753385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_40
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 322
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6192515c5344a4c0800000000000000
+      internalID: -4277219682314710678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_41
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 266
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdfbb9cd3f3207350800000000000000
+      internalID: 6012345032824831963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_42
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 264
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9e7751876b81620800000000000000
+      internalID: 2745144599754828241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_43
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 263
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e36a5e72bf423a0800000000000000
+      internalID: -6690946997590540789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_44
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 271
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb7310bea2314d10800000000000000
+      internalID: 2108021826445868002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_45
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 259
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443419b5299b4b8b0800000000000000
+      internalID: -5137277236670282940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_46
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 259
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f165444c8e64984a0800000000000000
+      internalID: -6590658614140840417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_47
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 267
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a142f6d739465630800000000000000
+      internalID: 3915397430223454631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_48
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 247
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694c6cd8c52e17fe0800000000000000
+      internalID: -1192923539132988266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_49
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 239
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d3cb05de898a380800000000000000
+      internalID: -8959743313624416933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_50
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 226
+        width: 92
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66505217a7e163e10800000000000000
+      internalID: 2176960981113308518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_51
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 175
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8abf764b05ccb57a0800000000000000
+      internalID: -6387286999498753112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_52
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 232
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1958774c820763b0800000000000000
+      internalID: -5519440016801507042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_53
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 238
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7b2e074c9ac5e40800000000000000
+      internalID: 5646574693988349869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_54
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 175
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c72b1cdb663aa390800000000000000
+      internalID: -7806367167211165752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_55
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 210
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fa1cb0bbd80cdf0800000000000000
+      internalID: -161973752089694445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_56
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 225
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4415d672ba6699170800000000000000
+      internalID: 8185686683009503556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_57
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 216
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3267211e86b2383b0800000000000000
+      internalID: -5511513789518678493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_58
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 208
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3760c9709768f6800800000000000000
+      internalID: 607852329095136883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_59
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 194
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3097253773a2f6e0800000000000000
+      internalID: -1805200768233926593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_60
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 195
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535a2a2c431ba29e0800000000000000
+      internalID: -1645307873688640203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_61
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 201
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e678bd075790e6460800000000000000
+      internalID: 7236732051240224622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_62
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 206
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ab17e8d6fcecc60800000000000000
+      internalID: 7840432070746815049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_63
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 194
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a309c1a077a07c70800000000000000
+      internalID: 8966850960287138723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_64
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 138
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa1ca8db4e90e3f00800000000000000
+      internalID: 1098326237162160554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_65
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 137
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3056f7284d6ebb710800000000000000
+      internalID: 1710214283914077443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_66
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 135
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8633f86591a23b0800000000000000
+      internalID: -5536584932338210621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_67
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 143
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91300a041637d5860800000000000000
+      internalID: 7520293814311846681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_68
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 131
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11aeadda658a3bd90800000000000000
+      internalID: -7083132698686199279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_69
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 131
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b2d513fdd114260800000000000000
+      internalID: 7079972933646232386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_70
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 139
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98d574830dc4da20800000000000000
+      internalID: 3086317059646544030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_71
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 98
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20621c84c98d5cb30800000000000000
+      internalID: 4307086784396862978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_72
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 98
+        width: 28
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4bcfbed7e2dcb20800000000000000
+      internalID: 3156230032221582546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_73
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 119
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25aeb0ab239b90750800000000000000
+      internalID: 6271747583610972754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_74
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 111
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a5ae8b7f5085630800000000000000
+      internalID: 3915886437516073522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_75
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 47
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7a018a3a0451610800000000000000
+      internalID: 1591249114988849067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_76
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 104
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70a6b52d72ae1a20800000000000000
+      internalID: 3035041857281630333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_77
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 110
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b397af4d32e494880800000000000000
+      internalID: -8626277695447467717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_78
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 47
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54003181aee86e2a0800000000000000
+      internalID: -6708517458844385211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_79
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 97
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae491f4fe61b8ca90800000000000000
+      internalID: -7293384506412526358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_80
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 88
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8cd5d8751db31dd0800000000000000
+      internalID: -2516459866850730868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_81
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 80
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b524dd1b4b0082500800000000000000
+      internalID: 371547745336246875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_82
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 66
+        width: 92
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca87c1d9cabc66f0800000000000000
+      internalID: -689971266923820348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_83
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 73
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428a4dc1e81e754e0800000000000000
+      internalID: -1992876309602850780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_84
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 78
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c352b85e8268c930800000000000000
+      internalID: 4163686219016983496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_85
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 50
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c503b8b9c39767e70800000000000000
+      internalID: 9112604197245366364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_86
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 66
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c42fdeb755e2d30800000000000000
+      internalID: 4408555076003712116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_87
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 15
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768517a4c1b80d3c0800000000000000
+      internalID: -4336813487533500313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_88
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 39
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b027cff900094dda0800000000000000
+      internalID: -5920949277726838261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_89
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 35
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e436f2dc624bab2c0800000000000000
+      internalID: -4415018405939158194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_90
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53792286186132080800000000000000
+      internalID: -9213495667616213195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_91
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 9
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc35f0c8223c7990800000000000000
+      internalID: -7386974138177078078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_92
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 7
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3921e6d2619a3f560800000000000000
+      internalID: 7346401329887974035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_93
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 3
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19aaf82b6dd5693f0800000000000000
+      internalID: -894424299286320495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_94
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 3
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8108cff31b889f20800000000000000
+      internalID: 3429644034254569871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_95
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 11
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa8f546c88a2c180800000000000000
+      internalID: -9096522976402109709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_96
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 4
+        width: 59
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad129dd28f3aa32c0800000000000000
+      internalID: -4451064995385892390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_97
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 4
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c37a8edb1e610420800000000000000
+      internalID: 2594475926318904262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Terrain_Tiles_32x32_98
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 4
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6283aee6f8ed4b60800000000000000
+      internalID: 7732092282528301679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Shelter_Terrain_Tiles_32x32_0: 4507287306829265120
+      Shelter_Terrain_Tiles_32x32_1: 141930784726266854
+      Shelter_Terrain_Tiles_32x32_10: 8812197838070356849
+      Shelter_Terrain_Tiles_32x32_11: -7677888075186890953
+      Shelter_Terrain_Tiles_32x32_12: -4105795205898198270
+      Shelter_Terrain_Tiles_32x32_13: -3832991428275924765
+      Shelter_Terrain_Tiles_32x32_14: 4633432914596175296
+      Shelter_Terrain_Tiles_32x32_15: 1427160917980742626
+      Shelter_Terrain_Tiles_32x32_16: 6381126124474985340
+      Shelter_Terrain_Tiles_32x32_17: 8428472054632350667
+      Shelter_Terrain_Tiles_32x32_18: 3136806718598923844
+      Shelter_Terrain_Tiles_32x32_19: -2380161621732954250
+      Shelter_Terrain_Tiles_32x32_2: 880236863643225715
+      Shelter_Terrain_Tiles_32x32_20: -5654783228407063004
+      Shelter_Terrain_Tiles_32x32_21: 5457992563197926314
+      Shelter_Terrain_Tiles_32x32_22: -6362834920223306797
+      Shelter_Terrain_Tiles_32x32_23: 7137896496906225493
+      Shelter_Terrain_Tiles_32x32_24: 7462984217241614407
+      Shelter_Terrain_Tiles_32x32_25: -115442681366282247
+      Shelter_Terrain_Tiles_32x32_26: -6355494605984690349
+      Shelter_Terrain_Tiles_32x32_27: -4255834432204008187
+      Shelter_Terrain_Tiles_32x32_28: -954336485350767002
+      Shelter_Terrain_Tiles_32x32_29: -2666722499432769753
+      Shelter_Terrain_Tiles_32x32_3: 6320509314578505916
+      Shelter_Terrain_Tiles_32x32_30: -1322735814890988292
+      Shelter_Terrain_Tiles_32x32_31: 1365581026108568047
+      Shelter_Terrain_Tiles_32x32_32: 2850213118910014932
+      Shelter_Terrain_Tiles_32x32_33: -7848233794632556828
+      Shelter_Terrain_Tiles_32x32_34: 2238046624750386468
+      Shelter_Terrain_Tiles_32x32_35: -563021438213100288
+      Shelter_Terrain_Tiles_32x32_36: 120230300112767282
+      Shelter_Terrain_Tiles_32x32_37: 5569672746740867588
+      Shelter_Terrain_Tiles_32x32_38: -5223265838746622654
+      Shelter_Terrain_Tiles_32x32_39: -8078122566908753385
+      Shelter_Terrain_Tiles_32x32_4: 3802099791044933360
+      Shelter_Terrain_Tiles_32x32_40: -4277219682314710678
+      Shelter_Terrain_Tiles_32x32_41: 6012345032824831963
+      Shelter_Terrain_Tiles_32x32_42: 2745144599754828241
+      Shelter_Terrain_Tiles_32x32_43: -6690946997590540789
+      Shelter_Terrain_Tiles_32x32_44: 2108021826445868002
+      Shelter_Terrain_Tiles_32x32_45: -5137277236670282940
+      Shelter_Terrain_Tiles_32x32_46: -6590658614140840417
+      Shelter_Terrain_Tiles_32x32_47: 3915397430223454631
+      Shelter_Terrain_Tiles_32x32_48: -1192923539132988266
+      Shelter_Terrain_Tiles_32x32_49: -8959743313624416933
+      Shelter_Terrain_Tiles_32x32_5: 5227577204359471211
+      Shelter_Terrain_Tiles_32x32_50: 2176960981113308518
+      Shelter_Terrain_Tiles_32x32_51: -6387286999498753112
+      Shelter_Terrain_Tiles_32x32_52: -5519440016801507042
+      Shelter_Terrain_Tiles_32x32_53: 5646574693988349869
+      Shelter_Terrain_Tiles_32x32_54: -7806367167211165752
+      Shelter_Terrain_Tiles_32x32_55: -161973752089694445
+      Shelter_Terrain_Tiles_32x32_56: 8185686683009503556
+      Shelter_Terrain_Tiles_32x32_57: -5511513789518678493
+      Shelter_Terrain_Tiles_32x32_58: 607852329095136883
+      Shelter_Terrain_Tiles_32x32_59: -1805200768233926593
+      Shelter_Terrain_Tiles_32x32_6: -7108054704106434351
+      Shelter_Terrain_Tiles_32x32_60: -1645307873688640203
+      Shelter_Terrain_Tiles_32x32_61: 7236732051240224622
+      Shelter_Terrain_Tiles_32x32_62: 7840432070746815049
+      Shelter_Terrain_Tiles_32x32_63: 8966850960287138723
+      Shelter_Terrain_Tiles_32x32_64: 1098326237162160554
+      Shelter_Terrain_Tiles_32x32_65: 1710214283914077443
+      Shelter_Terrain_Tiles_32x32_66: -5536584932338210621
+      Shelter_Terrain_Tiles_32x32_67: 7520293814311846681
+      Shelter_Terrain_Tiles_32x32_68: -7083132698686199279
+      Shelter_Terrain_Tiles_32x32_69: 7079972933646232386
+      Shelter_Terrain_Tiles_32x32_7: 4910860270846205862
+      Shelter_Terrain_Tiles_32x32_70: 3086317059646544030
+      Shelter_Terrain_Tiles_32x32_71: 4307086784396862978
+      Shelter_Terrain_Tiles_32x32_72: 3156230032221582546
+      Shelter_Terrain_Tiles_32x32_73: 6271747583610972754
+      Shelter_Terrain_Tiles_32x32_74: 3915886437516073522
+      Shelter_Terrain_Tiles_32x32_75: 1591249114988849067
+      Shelter_Terrain_Tiles_32x32_76: 3035041857281630333
+      Shelter_Terrain_Tiles_32x32_77: -8626277695447467717
+      Shelter_Terrain_Tiles_32x32_78: -6708517458844385211
+      Shelter_Terrain_Tiles_32x32_79: -7293384506412526358
+      Shelter_Terrain_Tiles_32x32_8: 934554367629280698
+      Shelter_Terrain_Tiles_32x32_80: -2516459866850730868
+      Shelter_Terrain_Tiles_32x32_81: 371547745336246875
+      Shelter_Terrain_Tiles_32x32_82: -689971266923820348
+      Shelter_Terrain_Tiles_32x32_83: -1992876309602850780
+      Shelter_Terrain_Tiles_32x32_84: 4163686219016983496
+      Shelter_Terrain_Tiles_32x32_85: 9112604197245366364
+      Shelter_Terrain_Tiles_32x32_86: 4408555076003712116
+      Shelter_Terrain_Tiles_32x32_87: -4336813487533500313
+      Shelter_Terrain_Tiles_32x32_88: -5920949277726838261
+      Shelter_Terrain_Tiles_32x32_89: -4415018405939158194
+      Shelter_Terrain_Tiles_32x32_9: -8511798119157959288
+      Shelter_Terrain_Tiles_32x32_90: -9213495667616213195
+      Shelter_Terrain_Tiles_32x32_91: -7386974138177078078
+      Shelter_Terrain_Tiles_32x32_92: 7346401329887974035
+      Shelter_Terrain_Tiles_32x32_93: -894424299286320495
+      Shelter_Terrain_Tiles_32x32_94: 3429644034254569871
+      Shelter_Terrain_Tiles_32x32_95: -9096522976402109709
+      Shelter_Terrain_Tiles_32x32_96: -4451064995385892390
+      Shelter_Terrain_Tiles_32x32_97: 2594475926318904262
+      Shelter_Terrain_Tiles_32x32_98: 7732092282528301679
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
