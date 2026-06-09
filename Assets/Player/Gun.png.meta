@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1f32bccede0c0eb4ebd77abcaa259954
+guid: fb33ab97f1fe4d749a4649d2ed622040
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8981767678457853664
-    second: Fire_Down-Sheet3_0
+      213: 6879118450950661895
+    second: Gun_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire_Down-Sheet3_0
+      name: Gun_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 21
-        height: 10
+        width: 16
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0294f6642e95a5380800000000000000
-      internalID: -8981767678457853664
+      spriteID: 707efb4b8c9877f50800000000000000
+      internalID: 6879118450950661895
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fire_Down-Sheet3_0: -8981767678457853664
+      Gun_0: 6879118450950661895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

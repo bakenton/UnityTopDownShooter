@@ -18,16 +18,8 @@ public class PlayerController : MonoBehaviour
     public float aimRotationOffset = 0f;
     [Tooltip("0 = instant, >0 = smoothing speed")]
     public float aimSmoothing = 0f;
-
-    [Header("Animation Sprites")]
-    public Sprite idleFront;
-    public Sprite idleBack;
-    public Sprite idleLeft;
-    public Sprite idleRight;
-    public Sprite runFront;
-    public Sprite runBack;
-    public Sprite runLeft;
-    public Sprite runRight;
+    [Tooltip("Расстояние firePoint от центра персонажа")]
+    public float firePointDistance = 0.5f;
 
     [Header("Sprint / Stamina")]
     [Tooltip("Перетащите Sprint action (Button) сюда или оставьте пустым — будет использован Left Shift")]
@@ -50,6 +42,7 @@ public class PlayerController : MonoBehaviour
     bool isSprinting;
 
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
     private PlayerShooting playerShooting;
     private Vector2 lastLookDirection = Vector2.down;
 
@@ -63,6 +56,10 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer == null)
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        animator = GetComponent<Animator>();
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
 
         playerShooting = GetComponent<PlayerShooting>();
 
@@ -234,36 +231,48 @@ public class PlayerController : MonoBehaviour
 
         if (playerShooting != null && playerShooting.firePoint != null)
         {
+            // Вращение firePoint
             playerShooting.firePoint.rotation = Quaternion.Euler(0f, 0f, targetAngle);
+            
+            // Движение firePoint вокруг персонажа на определённом расстоянии
+            Vector3 firePointPos = transform.position + (Vector3)dir * firePointDistance;
+            firePointPos.z = playerShooting.firePoint.position.z; // сохраняем Z
+            playerShooting.firePoint.position = firePointPos;
         }
 
-        UpdateAnimation(dir);
+        UpdateAnimation();
     }
 
-    void UpdateAnimation(Vector2 lookDirection)
+    void UpdateAnimation()
     {
-        if (spriteRenderer == null) return;
+        if (animator == null) return;
 
         bool moving = moveInput.sqrMagnitude > 0.1f;
-        Sprite nextSprite = null;
-
-        if (Mathf.Abs(lookDirection.x) > Mathf.Abs(lookDirection.y))
+        
+        // Переключаем параметр IsMoving в Animator
+        animator.SetBool("IsMoving", moving);
+        
+        // Определяем направление движения для разворота спрайта
+        Vector2 moveDirection = moveInput;
+        if (moveDirection.sqrMagnitude < 0.1f)
         {
-            if (lookDirection.x > 0f)
-                nextSprite = moving ? runRight : idleRight;
-            else
-                nextSprite = moving ? runLeft : idleLeft;
+            // Если не движется, используем направление взгляда
+            moveDirection = lastLookDirection;
         }
-        else
+        
+        // Разворот спрайта влево/вправо
+        UpdateSpriteFlip(moveDirection);
+    }
+    
+    void UpdateSpriteFlip(Vector2 direction)
+    {
+        if (spriteRenderer == null) return;
+        
+        // Если есть движение в стороны, разворачиваем спрайт
+        if (Mathf.Abs(direction.x) > 0.1f)
         {
-            if (lookDirection.y > 0f)
-                nextSprite = moving ? runBack : idleBack;
-            else
-                nextSprite = moving ? runFront : idleFront;
+            spriteRenderer.flipX = direction.x < 0f;
         }
-
-        if (nextSprite != null)
-            spriteRenderer.sprite = nextSprite;
     }
 
     // публичный доступ к уровню стамины для UI

@@ -204,14 +204,27 @@ public class PlayerShooting : MonoBehaviour
         Debug.Log($"[PlayerShooting] Fired at {Time.time:F2}. Ammo: {currentAmmo}/{maxAmmo} (reserve {reserveAmmo})");
 
         var b = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        var rb = b.GetComponent<Rigidbody2D>();
-        if (rb != null)
+        // Force bullet to move along firePoint's local Y axis
+        var rb2 = b.GetComponent<Rigidbody2D>();
+        if (rb2 != null)
         {
             Vector2 dir = firePoint.up;
-            rb.gravityScale = 0f;
-            rb.freezeRotation = true;
-            rb.linearVelocity = dir.normalized * bulletSpeed;
-            rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+            rb2.gravityScale = 0f;
+            rb2.freezeRotation = true;
+            rb2.linearVelocity = dir * bulletSpeed;
+            rb2.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        }
+        else
+        {
+            var rb3 = b.GetComponent<Rigidbody>();
+            if (rb3 != null)
+            {
+                Vector3 dir3 = firePoint.up;
+                rb3.useGravity = false;
+                rb3.freezeRotation = true;
+                rb3.linearVelocity = dir3 * bulletSpeed;
+                rb3.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
+            }
         }
     }
 
