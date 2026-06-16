@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     public float chaseSpeed = 3.5f;
 
     [Header("Attack")]
-    public float attackInterval = 1.2f;
+    public float attackInterval = 3f;
     public int attackDamage = 10;
     public int contactDamage = 10;
     public float contactDamageCooldown = 1f;
@@ -25,18 +25,45 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 50;
     public int currentHealth;
     public GameObject deathEffectPrefab;
+    public AudioClip[] hitSounds;
+    public float hitVolume = 1f;
+    public AudioClip[] deathSounds;
+    public float deathVolume = 1f;
+
+    [Header("Audio")]
+    public AudioClip chaseSound;
+    public float chaseSoundVolume = 0.7f;
+    public AudioClip[] attackSounds;
+    public float attackVolume = 0.8f;
+
+    [Header("Animation")]
+    private Animator animator;
+    public string walkParameter = "IsWalk?";
+    public string attackParameter = "IsAttack?";
+    public string deadParameter = "IsDead?";
 
     [Header("Debug")]
     public bool drawDebugGizmos = true;
 
     Transform player;
     EnemyState currentState = EnemyState.Wander;
+    EnemyState previousState = EnemyState.Wander;
     float attackTimer;
     float contactDamageTimer;
     Rigidbody2D rb;
     Vector2 wanderCenter;
     Vector2 wanderTarget;
     float wanderTimer;
+    bool isDead;
+
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
+
+        ValidateAnimatorParameters();
+    }
 
     void Start()
     {
@@ -55,6 +82,10 @@ public class Enemy : MonoBehaviour
 
         currentHealth = maxHealth;
         contactDamageTimer = 0f;
+        isDead = false;
+        SetAnimatorBool(deadParameter, false);
+        SetAnimatorBool(walkParameter, false);
+        SetAnimatorBool(attackParameter, false);
     }
 
     void Update()
@@ -80,6 +111,7 @@ public class Enemy : MonoBehaviour
                 if (playerVisible)
                 {
                     currentState = EnemyState.Chase;
+                    PlaySound(chaseSound, chaseSoundVolume);
                 }
                 else
                 {
@@ -121,6 +153,7 @@ public class Enemy : MonoBehaviour
                 if (playerVisible)
                 {
                     currentState = EnemyState.Chase;
+                    PlaySound(chaseSound, chaseSoundVolume);
                 }
                 else
                 {
@@ -128,6 +161,9 @@ public class Enemy : MonoBehaviour
                 }
                 break;
         }
+
+        previousState = currentState;
+        UpdateAnimationState();
     }
 
     Transform FindPlayer()
@@ -169,6 +205,7 @@ public class Enemy : MonoBehaviour
         attackTimer += Time.deltaTime;
         if (attackTimer >= attackInterval)
         {
+            PlayRandomAttackSound();
             attackTimer = 0f;
             var health = player.GetComponent<PlayerHealth>();
             if (health != null)
@@ -181,13 +218,16 @@ public class Enemy : MonoBehaviour
     void MoveToward(Vector2 target, float speed)
     {
         Vector2 direction = (target - rb.position).normalized;
-        rb.MovePosition(Vector2.MoveTowards(rb.position, target, speed * Time.deltaTime));
+        bool moving = direction.sqrMagnitude > 0.001f;
 
-        if (direction.sqrMagnitude > 0.001f)
-        {
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
-            rb.rotation = angle;
-        }
+        if (animator == null)
+            animator = GetComponent<Animator>();
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
+
+        SetAnimatorBool(walkParameter, moving && !isDead);
+
+        rb.MovePosition(Vector2.MoveTowards(rb.position, target, speed * Time.deltaTime));
     }
 
     bool ReachedDestination(Vector2 target)
@@ -203,21 +243,113 @@ public class Enemy : MonoBehaviour
         wanderTarget = wanderCenter + offset;
     }
 
+    void SetAnimatorBool(string parameter, bool value)
+    {
+        if (animator == null || string.IsNullOrEmpty(parameter))
+            return;
+
+        animator.SetBool(parameter, value);
+    }
+
+    void UpdateAnimationState()
+    {
+        if (animator == null)
+            return;
+
+        SetAnimatorBool(deadParameter, isDead);
+        bool isWalking = !isDead && (currentState == EnemyState.Wander || currentState == EnemyState.Chase || currentState == EnemyState.ReturnToWander);
+        SetAnimatorBool(walkParameter, isWalking);
+
+        bool isAttacking = !isDead && currentState == EnemyState.Attack;
+        SetAnimatorBool(attackParameter, isAttacking);
+    }
+
+    void ValidateAnimatorParameters()
+    {
+        if (animator == null)
+            return;
+
+        if (!AnimatorHasParameter(walkParameter))
+            Debug.LogWarning($"Enemy: Animator parameter '{walkParameter}' not found on {name}.");
+        if (!AnimatorHasParameter(attackParameter))
+            Debug.LogWarning($"Enemy: Animator parameter '{attackParameter}' not found on {name}.");
+        if (!AnimatorHasParameter(deadParameter))
+            Debug.LogWarning($"Enemy: Animator parameter '{deadParameter}' not found on {name}.");
+    }
+
+    bool AnimatorHasParameter(string parameter)
+    {
+        if (animator == null || string.IsNullOrEmpty(parameter))
+            return false;
+
+        foreach (var p in animator.parameters)
+        {
+            if (p.name == parameter)
+                return true;
+        }
+        return false;
+    }
+
+    void PlaySound(AudioClip clip, float volume)
+    {
+        if (clip == null) return;
+        AudioSource.PlayClipAtPoint(clip, transform.position, Mathf.Clamp01(volume));
+    }
+
+    void PlayRandomHitSound()
+    {
+        if (hitSounds == null || hitSounds.Length == 0) return;
+        
+        int randomIndex = Random.Range(0, hitSounds.Length);
+        PlaySound(hitSounds[randomIndex], hitVolume);
+    }
+
+    void PlayRandomDeathSound()
+    {
+        if (deathSounds == null || deathSounds.Length == 0) return;
+        
+        int randomIndex = Random.Range(0, deathSounds.Length);
+        PlaySound(deathSounds[randomIndex], deathVolume);
+    }
+
+    void PlayRandomAttackSound()
+    {
+        if (attackSounds == null || attackSounds.Length == 0) return;
+        
+        int randomIndex = Random.Range(0, attackSounds.Length);
+        PlaySound(attackSounds[randomIndex], attackVolume);
+    }
+
     public void TakeDamage(int amount)
     {
+        if (currentHealth <= 0)
+            return;
+
         currentHealth -= amount;
         if (currentHealth <= 0)
         {
             Die();
         }
+        else
+        {
+            PlayRandomHitSound();
+        }
     }
 
     void Die()
     {
+        if (isDead)
+            return;
+
+        isDead = true;
+        SetAnimatorBool(deadParameter, true);
+        SetAnimatorBool(walkParameter, false);
+        PlayRandomDeathSound();
+
         if (deathEffectPrefab != null)
             Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
 
-        Destroy(gameObject);
+        Destroy(gameObject, 1.5f);
     }
 
     void OnCollisionStay2D(Collision2D collision)

@@ -10,6 +10,12 @@ public class PlayerShooting : MonoBehaviour
     public float bulletSpeed = 20f;
     public float fireRate = 6f; // rounds per second
     public bool holdToFire = false; // true = auto while hold, false = single-shot on press
+    public AudioClip shotSound;
+    public float shotVolume = 1f;
+
+    [Header("Reload")]
+    public AudioClip reloadSound;
+    public float reloadVolume = 1f;
 
     [Header("Input (optional)")]
     public InputActionReference fireAction; // assign "Attack" action reference or use PlayerInput
@@ -204,6 +210,9 @@ public class PlayerShooting : MonoBehaviour
         Debug.Log($"[PlayerShooting] Fired at {Time.time:F2}. Ammo: {currentAmmo}/{maxAmmo} (reserve {reserveAmmo})");
 
         var b = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        if (shotSound != null)
+            AudioSource.PlayClipAtPoint(shotSound, firePoint.position, shotVolume);
+
         // Force bullet to move along firePoint's local Y axis
         var rb2 = b.GetComponent<Rigidbody2D>();
         if (rb2 != null)
@@ -241,6 +250,9 @@ public class PlayerShooting : MonoBehaviour
             Debug.Log("[PlayerShooting] No reserve ammo left.");
             return;
         }
+
+        if (reloadSound != null)
+            AudioSource.PlayClipAtPoint(reloadSound, transform.position, reloadVolume);
 
         isReloading = true;
         reloadEndTime = Time.time + Mathf.Max(0.01f, reloadTime);
