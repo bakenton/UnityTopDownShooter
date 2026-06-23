@@ -9,6 +9,12 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private float spawnFrequency = 2f; // Частота спауна в секундах
     [SerializeField]
+    private bool useSpawnProgression = true;
+    [SerializeField]
+    private AnimationCurve spawnIntervalOverTime = AnimationCurve.Linear(0f, 2f, 120f, 0.5f);
+    [SerializeField]
+    private float minSpawnInterval = 0.2f;
+    [SerializeField]
     private int maxEnemies = 10; // Максимальное количество врагов на сцене
     [SerializeField]
     private bool isSpawning = true;
@@ -24,6 +30,7 @@ public class EnemySpawner : MonoBehaviour
     private bool drawDebugGizmos = true;
 
     private float spawnTimer = 0f;
+    private float elapsedTime = 0f;
     private List<Enemy> activeEnemies = new List<Enemy>();
 
     void Start()
@@ -39,13 +46,15 @@ public class EnemySpawner : MonoBehaviour
             Debug.LogError("Enemy Spawner: Enemy prefab не задан!");
         }
 
-        spawnTimer = spawnFrequency;
+        spawnTimer = GetCurrentSpawnInterval();
     }
 
     void Update()
     {
         if (!isSpawning || enemyPrefab == null)
             return;
+
+        elapsedTime += Time.deltaTime;
 
         // Очистить список от уничтоженных врагов
         activeEnemies.RemoveAll(enemy => enemy == null);
@@ -55,7 +64,7 @@ public class EnemySpawner : MonoBehaviour
         if (spawnTimer <= 0f && activeEnemies.Count < maxEnemies)
         {
             SpawnEnemy();
-            spawnTimer = spawnFrequency;
+            spawnTimer = GetCurrentSpawnInterval();
         }
     }
 
@@ -117,6 +126,16 @@ public class EnemySpawner : MonoBehaviour
     public int GetActiveEnemyCount()
     {
         return activeEnemies.Count;
+    }
+
+    private float GetCurrentSpawnInterval()
+    {
+        if (useSpawnProgression && spawnIntervalOverTime != null && spawnIntervalOverTime.length > 0)
+        {
+            return Mathf.Max(minSpawnInterval, spawnIntervalOverTime.Evaluate(elapsedTime));
+        }
+
+        return Mathf.Max(minSpawnInterval, spawnFrequency);
     }
 
     // Добавить точку спауна

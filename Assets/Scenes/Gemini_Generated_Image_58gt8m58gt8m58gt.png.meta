@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d7b2c52463f8845439f16ab57e02c9ca
+guid: e80e2e98653a736479c78171bc96059f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1462799768519014029
-    second: Bandage_0
+      213: 7816146381697734018
+    second: Gemini_Generated_Image_58gt8m58gt8m58gt_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bandage_0
+      name: Gemini_Generated_Image_58gt8m58gt8m58gt_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 5
-        height: 7
+        width: 1408
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d867914a3a8ec4410800000000000000
-      internalID: 1462799768519014029
+      spriteID: 2855c81f8b7887c60800000000000000
+      internalID: 7816146381697734018
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bandage_0: 1462799768519014029
+      Gemini_Generated_Image_58gt8m58gt8m58gt_0: 7816146381697734018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

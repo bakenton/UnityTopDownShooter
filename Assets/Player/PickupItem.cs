@@ -14,6 +14,11 @@ public class PickupItem : MonoBehaviour
     public string keyName = "Key"; // for Key type
     public bool destroyOnPickup = true;
 
+    [Header("Pickup Sounds")]
+    public AudioClip ammoPickupSound;
+    public AudioClip healthPickupSound;
+    public float pickupVolume = 1f;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other == null) return;
@@ -24,6 +29,7 @@ public class PickupItem : MonoBehaviour
             if (shooter != null)
             {
                 shooter.AddAmmo(amount);
+                PlayPickupSound(pickupType);
                 PickupCollected();
             }
         }
@@ -33,6 +39,7 @@ public class PickupItem : MonoBehaviour
             if (health != null)
             {
                 health.Heal(amount);
+                PlayPickupSound(pickupType);
                 PickupCollected();
             }
         }
@@ -51,5 +58,18 @@ public class PickupItem : MonoBehaviour
     {
         if (destroyOnPickup)
             Destroy(gameObject);
+    }
+
+    void PlayPickupSound(PickupType type)
+    {
+        AudioClip clip = null;
+
+        if (type == PickupType.Ammo)
+            clip = ammoPickupSound;
+        else if (type == PickupType.Health)
+            clip = healthPickupSound;
+
+        if (clip != null)
+            AudioSource.PlayClipAtPoint(clip, transform.position, Mathf.Clamp01(pickupVolume));
     }
 }

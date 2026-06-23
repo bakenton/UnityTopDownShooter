@@ -49,6 +49,8 @@ public class Enemy : MonoBehaviour
     EnemyState currentState = EnemyState.Wander;
     EnemyState previousState = EnemyState.Wander;
     float attackTimer;
+    bool attackReady;
+    bool attackPerformed;
     float contactDamageTimer;
     Rigidbody2D rb;
     Vector2 wanderCenter;
@@ -205,14 +207,26 @@ public class Enemy : MonoBehaviour
         attackTimer += Time.deltaTime;
         if (attackTimer >= attackInterval)
         {
-            PlayRandomAttackSound();
             attackTimer = 0f;
-            var health = player.GetComponent<PlayerHealth>();
-            if (health != null)
-            {
-                health.TakeDamage(attackDamage);
-            }
+            attackReady = true;
+            attackPerformed = false;
         }
+    }
+
+    public void OnAttackAnimationHit()
+    {
+        if (!attackReady || attackPerformed || player == null || currentHealth <= 0)
+            return;
+
+        var health = player.GetComponent<PlayerHealth>();
+        if (health != null)
+        {
+            health.TakeDamage(attackDamage);
+            PlayRandomAttackSound();
+        }
+
+        attackPerformed = true;
+        attackReady = false;
     }
 
     void MoveToward(Vector2 target, float speed)
@@ -346,6 +360,8 @@ public class Enemy : MonoBehaviour
         SetAnimatorBool(walkParameter, false);
         PlayRandomDeathSound();
 
+        GameManager.Instance.AddKill();
+
         if (deathEffectPrefab != null)
             Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
 
@@ -354,6 +370,9 @@ public class Enemy : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D collision)
     {
+        if (currentState == EnemyState.Attack)
+            return;
+
         if (contactDamageTimer > 0f) return;
         if (collision.gameObject.CompareTag("Player"))
         {
