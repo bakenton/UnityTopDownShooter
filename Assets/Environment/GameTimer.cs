@@ -6,10 +6,13 @@ using TMPro;
 public class GameTimer : MonoBehaviour
 {
     [Header("Timer")]
-    [Tooltip("Время до перехода на следующую сцену, в секундах.")]
+    [Tooltip("Время до окончания таймера, в секундах.")]
     public float timeLimit = 120f;
 
-    [Tooltip("Имя сцены, которая будет загружена по истечении таймера.")]
+    [Tooltip("Если включено, таймер будет обновляться. По умолчанию таймер не завершает уровень.")]
+    public bool enableTimer = false;
+
+    [Tooltip("Имя сцены, которая будет загружена вручную или при желании в будущем.")]
     public string nextSceneName = "NextScene";
 
     [Header("UI")]
@@ -27,8 +30,16 @@ public class GameTimer : MonoBehaviour
 
     void Start()
     {
-        Debug.Log($"GameTimer: started. nextSceneName='{nextSceneName}', timeLimit={timeLimit}");
+        Debug.Log($"GameTimer: started. nextSceneName='{nextSceneName}', timeLimit={timeLimit}, enableTimer={enableTimer}");
+
         GameManager.Instance.ResetKillCount();
+
+        if (!enableTimer)
+        {
+            UpdateTimerDisplay(timeLimit);
+            return;
+        }
+
         ResetTimer();
         StartTimer();
     }
@@ -45,7 +56,7 @@ public class GameTimer : MonoBehaviour
         if (elapsedTime >= timeLimit)
         {
             isRunning = false;
-            LoadNextScene();
+            Debug.Log("GameTimer: время вышло, но автоматический переход уровня отключен.");
         }
     }
 

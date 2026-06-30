@@ -16,6 +16,19 @@ public class KillCounterDisplay : MonoBehaviour
     void Start()
     {
         UpdateKillDisplay();
+        if (GameManager.Instance != null)
+            GameManager.Instance.OnKillCountChanged += OnKillCountChanged;
+    }
+
+    void OnDestroy()
+    {
+        if (GameManager.Instance != null)
+            GameManager.Instance.OnKillCountChanged -= OnKillCountChanged;
+    }
+
+    void OnKillCountChanged(int newKillCount)
+    {
+        UpdateKillDisplay();
     }
 
     public void UpdateKillDisplay()
