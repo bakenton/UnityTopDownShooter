@@ -27,6 +27,7 @@ public class BossEnemy : MonoBehaviour, IDamageable
     public float attackApproachDistance = 3.2f;
     public float attackWindup = 0.15f;
     public float attackRecovery = 0.25f;
+    public float attackHitWindow = 0.2f;
     public float retreatAfterHitTime = 0.25f;
     public float strafeSpeed = 3.5f;
 
@@ -55,8 +56,10 @@ public class BossEnemy : MonoBehaviour, IDamageable
     private float attackWindupTimer;
     private float cooldownTimer;
     private float retreatTimer;
+    private float attackHitWindowTimer;
     private int swingsUsed;
     private bool isPerformingAttack;
+    private bool hasDealtDamageThisAttack;
     private bool isDead;
 
     void Start()
@@ -113,6 +116,9 @@ public class BossEnemy : MonoBehaviour, IDamageable
                     MoveAwayFrom(player.position, pursuitSpeed * 0.8f);
                     break;
                 }
+
+                if (attackHitWindowTimer > 0f)
+                    attackHitWindowTimer -= Time.deltaTime;
 
                 if (attackWindupTimer > 0f)
                 {
@@ -185,8 +191,10 @@ public class BossEnemy : MonoBehaviour, IDamageable
             return;
 
         isPerformingAttack = true;
+        hasDealtDamageThisAttack = false;
         swingTimer = swingInterval;
         attackWindupTimer = attackWindup;
+        attackHitWindowTimer = 0f;
         SetAnimatorBool(attackParameter, true);
     }
 
@@ -200,20 +208,9 @@ public class BossEnemy : MonoBehaviour, IDamageable
 
         swingsUsed++;
         PlaySound(attackSound);
-
-        if (distanceToPlayer <= attackHitDistance)
-        {
-            var health = player.GetComponent<PlayerHealth>();
-            if (health != null)
-                health.TakeDamage(handDamage);
-
-            retreatTimer = retreatAfterHitTime;
-        }
-        else
-        {
-            // если бьёт мимо, он не отступает так сильно
-            retreatTimer = attackRecovery;
-        }
+        hasDealtDamageThisAttack = false;
+        attackHitWindowTimer = attackHitWindow;
+        retreatTimer = attackRecovery;
     }
 
     private void StartPursuit()
@@ -250,6 +247,37 @@ public class BossEnemy : MonoBehaviour, IDamageable
     {
         if (direction.sqrMagnitude > 0.001f)
             rb.MovePosition(rb.position + direction.normalized * speed * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        TryDamagePlayer(collision.collider);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        TryDamagePlayer(other);
+    }
+
+    private void TryDamagePlayer(Collider2D otherCollider)
+    {
+        if (isDead || hasDealtDamageThisAttack || attackHitWindowTimer <= 0f)
+            return;
+
+        if (otherCollider == null)
+            return;
+
+        var health = otherCollider.GetComponent<PlayerHealth>();
+        if (health == null)
+            health = otherCollider.GetComponentInParent<PlayerHealth>();
+
+        if (health == null)
+            return;
+
+        health.TakeDamage(handDamage);
+        hasDealtDamageThisAttack = true;
+        retreatTimer = retreatAfterHitTime;
+        attackHitWindowTimer = 0f;
     }
 
     public void TakeDamage(int amount)

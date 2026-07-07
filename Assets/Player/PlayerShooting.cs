@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
@@ -12,6 +13,11 @@ public class PlayerShooting : MonoBehaviour
     public bool holdToFire = false; // true = auto while hold, false = single-shot on press
     public AudioClip shotSound;
     public float shotVolume = 1f;
+
+    [Header("Visuals")]
+    public Sprite muzzleFlashSprite;
+    public float muzzleFlashDuration = 0.05f;
+    public float muzzleFlashScale = 0.25f;
 
     [Header("Reload")]
     public AudioClip reloadSound;
@@ -210,6 +216,7 @@ public class PlayerShooting : MonoBehaviour
         Debug.Log($"[PlayerShooting] Fired at {Time.time:F2}. Ammo: {currentAmmo}/{maxAmmo} (reserve {reserveAmmo})");
 
         var b = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        SpawnMuzzleFlash();
         if (shotSound != null)
             AudioSource.PlayClipAtPoint(shotSound, firePoint.position, shotVolume);
 
@@ -235,6 +242,63 @@ public class PlayerShooting : MonoBehaviour
                 rb3.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
             }
         }
+    }
+
+    private void SpawnMuzzleFlash()
+    {
+        if (firePoint == null)
+            return;
+
+        var flashObject = new GameObject("MuzzleFlash");
+        flashObject.transform.SetParent(firePoint, false);
+        flashObject.transform.localPosition = Vector3.zero;
+        flashObject.transform.localRotation = Quaternion.identity;
+        flashObject.transform.localScale = Vector3.one * muzzleFlashScale;
+
+        var spriteRenderer = flashObject.AddComponent<SpriteRenderer>();
+        spriteRenderer.sprite = muzzleFlashSprite != null ? muzzleFlashSprite : CreateFlashSprite();
+        spriteRenderer.color = new Color(1f, 0.95f, 0.6f, 0.9f);
+        spriteRenderer.sortingOrder = 100;
+
+        StartCoroutine(FadeMuzzleFlash(spriteRenderer, flashObject));
+    }
+
+    private Sprite CreateFlashSprite()
+    {
+        var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
+        texture.SetPixels(new[]
+        {
+            Color.white, Color.white,
+            Color.white, Color.white
+        });
+        texture.Apply();
+
+        return Sprite.Create(texture, new Rect(0f, 0f, 2f, 2f), new Vector2(0.5f, 0.5f), 100f);
+    }
+
+    private IEnumerator FadeMuzzleFlash(SpriteRenderer spriteRenderer, GameObject flashObject)
+    {
+        float elapsed = 0f;
+        while (elapsed < muzzleFlashDuration)
+        {
+            if (spriteRenderer != null)
+            {
+                float alpha = Mathf.Lerp(0.9f, 0f, elapsed / muzzleFlashDuration);
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, alpha);
+            }
+
+            if (flashObject != null)
+            {
+                float scale = Mathf.Lerp(muzzleFlashScale, muzzleFlashScale * 1.4f, elapsed / muzzleFlashDuration);
+                flashObject.transform.localScale = Vector3.one * scale;
+            }
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        if (flashObject != null)
+            Destroy(flashObject);
     }
 
     void TryStartReload()

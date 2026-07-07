@@ -138,6 +138,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   hitEffectPrefab: {fileID: 0}
+  hitSprite: {fileID: 6185800538022621663, guid: bdd466d928a4cdd4093e811328e66500, type: 3}
+  hitSpriteDuration: 0.1
+  hitSpriteScale: 5
 --- !u!58 &5261470019043647145
 CircleCollider2D:
   m_ObjectHideFlags: 0
