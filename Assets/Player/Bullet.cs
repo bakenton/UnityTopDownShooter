@@ -9,6 +9,9 @@ public class Bullet : MonoBehaviour
     public Sprite hitSprite;
     public float hitSpriteDuration = 0.08f;
     public float hitSpriteScale = 0.18f;
+    [Header("Hit Sounds")]
+    public AudioClip[] hitSounds;
+    [Range(0f, 1f)] public float hitSoundVolume = 1f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +35,7 @@ public class Bullet : MonoBehaviour
             Instantiate(hitEffectPrefab, transform.position, Quaternion.identity);
 
         SpawnHitSprite();
+        PlayRandomHitSound();
 
         var enemy = other.GetComponent<Enemy>();
         if (enemy != null)
@@ -64,6 +68,18 @@ public class Bullet : MonoBehaviour
 
         var effect = hitObject.AddComponent<HitSpriteEffect>();
         effect.Initialize(spriteRenderer, hitSpriteScale, hitSpriteDuration);
+    }
+
+    private void PlayRandomHitSound()
+    {
+        if (hitSounds == null || hitSounds.Length == 0)
+            return;
+
+        var clip = hitSounds[Random.Range(0, hitSounds.Length)];
+        if (clip == null)
+            return;
+
+        AudioSource.PlayClipAtPoint(clip, transform.position, hitSoundVolume);
     }
 
     private Sprite CreateHitSprite()

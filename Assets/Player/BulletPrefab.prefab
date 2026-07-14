@@ -141,6 +141,13 @@ MonoBehaviour:
   hitSprite: {fileID: 6185800538022621663, guid: bdd466d928a4cdd4093e811328e66500, type: 3}
   hitSpriteDuration: 0.1
   hitSpriteScale: 5
+  hitSounds:
+  - {fileID: 8300000, guid: 6805b938e92326d4a977eb439271b3db, type: 3}
+  - {fileID: 8300000, guid: b471100eed1522c46a54218ac2b270a9, type: 3}
+  - {fileID: 8300000, guid: 4e28b18dc524b5f46b30b98726dfbf36, type: 3}
+  - {fileID: 8300000, guid: aea02038be562834f81a180a77ebcb1c, type: 3}
+  - {fileID: 8300000, guid: 8576d7f3e0f399d40b755240c40a1db7, type: 3}
+  hitSoundVolume: 0.37
 --- !u!58 &5261470019043647145
 CircleCollider2D:
   m_ObjectHideFlags: 0

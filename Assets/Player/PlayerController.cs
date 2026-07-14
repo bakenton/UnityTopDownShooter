@@ -24,8 +24,14 @@ public class PlayerController : MonoBehaviour
     [Header("Sprint / Stamina")]
     [Tooltip("Перетащите Sprint action (Button) сюда или оставьте пустым — будет использован Left Shift")]
     public InputActionReference sprintAction;
+
     public string sprintActionName = "Sprint";
     public float sprintMultiplier = 1.8f;
+
+    [Header("Footsteps")]
+    public AudioClip[] footstepClips;
+    [Range(0f, 1f)] public float footstepVolume = 1f;
+    [Min(0.05f)] public float minFootstepInterval = 0.35f;
     public float maxStamina = 5f;
     public float staminaDrainRate = 1.5f; // per second while sprinting
     public float staminaRegenRate = 1f;   // per second when not sprinting
@@ -43,8 +49,10 @@ public class PlayerController : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private AudioSource audioSource;
     private PlayerShooting playerShooting;
     private Vector2 lastLookDirection = Vector2.down;
+    private float nextFootstepTime;
 
     void Awake()
     {
@@ -60,6 +68,16 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         if (animator == null)
             animator = GetComponentInChildren<Animator>();
+
+        if (animator == null)
+            animator = gameObject.AddComponent<Animator>();
+
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+
+        audioSource.playOnAwake = false;
+        audioSource.loop = false;
 
         playerShooting = GetComponent<PlayerShooting>();
 
@@ -273,6 +291,24 @@ public class PlayerController : MonoBehaviour
         {
             spriteRenderer.flipX = direction.x < 0f;
         }
+    }
+
+    public void PlayFootstepSound()
+    {
+        if (Time.time < nextFootstepTime)
+            return;
+
+        nextFootstepTime = Time.time + minFootstepInterval;
+
+        if (footstepClips == null || footstepClips.Length == 0)
+            return;
+
+        var clip = footstepClips[Random.Range(0, footstepClips.Length)];
+        if (clip == null)
+            return;
+
+        if (audioSource != null)
+            audioSource.PlayOneShot(clip, Mathf.Clamp01(footstepVolume));
     }
 
     // публичный доступ к уровню стамины для UI

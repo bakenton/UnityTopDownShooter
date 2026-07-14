@@ -17,6 +17,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private int maxEnemies = 10; // Максимальное количество врагов на сцене
     [SerializeField]
+    private int maxSpawnedEnemies = 20; // Максимальное количество врагов, которое спавнер может создать за всю игру
+    [SerializeField]
     private bool isSpawning = true;
 
     [Header("Spawn Points")]
@@ -31,6 +33,7 @@ public class EnemySpawner : MonoBehaviour
 
     private float spawnTimer = 0f;
     private float elapsedTime = 0f;
+    private int spawnedEnemiesCount = 0;
     private List<Enemy> activeEnemies = new List<Enemy>();
 
     void Start()
@@ -54,6 +57,12 @@ public class EnemySpawner : MonoBehaviour
         if (!isSpawning || enemyPrefab == null)
             return;
 
+        if (spawnedEnemiesCount >= maxSpawnedEnemies)
+        {
+            StopSpawning();
+            return;
+        }
+
         elapsedTime += Time.deltaTime;
 
         // Очистить список от уничтоженных врагов
@@ -73,13 +82,15 @@ public class EnemySpawner : MonoBehaviour
         Transform spawnPoint = GetSpawnPoint();
         GameObject newEnemy = Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
         
+        spawnedEnemiesCount++;
+
         Enemy enemyComponent = newEnemy.GetComponent<Enemy>();
         if (enemyComponent != null)
         {
             activeEnemies.Add(enemyComponent);
         }
 
-        Debug.Log($"Враг спавнен! Всего врагов на сцене: {activeEnemies.Count}");
+        Debug.Log($"Враг спавнен! Создано: {spawnedEnemiesCount}/{maxSpawnedEnemies}, активных: {activeEnemies.Count}");
     }
 
     Transform GetSpawnPoint()
@@ -121,6 +132,7 @@ public class EnemySpawner : MonoBehaviour
                 Destroy(enemy.gameObject);
         }
         activeEnemies.Clear();
+        spawnedEnemiesCount = 0;
     }
 
     public int GetActiveEnemyCount()
