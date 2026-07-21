@@ -28,7 +28,33 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.isTrigger) return;
-        if (hitMask != 0 && ((1 << other.gameObject.layer) & hitMask) == 0) return;
+        if (other.transform == transform) return;
+
+        var enemy = other.GetComponent<Enemy>();
+        if (enemy == null)
+        {
+            var boss = other.GetComponent<BossEnemy>();
+            if (boss == null)
+            {
+                return;
+            }
+
+            if (hitMask != 0 && ((1 << other.gameObject.layer) & hitMask) == 0)
+                return;
+
+            // spawn hit effect
+            if (hitEffectPrefab != null)
+                Instantiate(hitEffectPrefab, transform.position, Quaternion.identity);
+
+            SpawnHitSprite();
+            PlayRandomHitSound();
+            boss.TakeDamage(damage);
+            Destroy(gameObject);
+            return;
+        }
+
+        if (hitMask != 0 && ((1 << other.gameObject.layer) & hitMask) == 0)
+            return;
 
         // spawn hit effect
         if (hitEffectPrefab != null)
@@ -36,21 +62,7 @@ public class Bullet : MonoBehaviour
 
         SpawnHitSprite();
         PlayRandomHitSound();
-
-        var enemy = other.GetComponent<Enemy>();
-        if (enemy != null)
-        {
-            enemy.TakeDamage(damage);
-        }
-        else
-        {
-            var boss = other.GetComponent<BossEnemy>();
-            if (boss != null)
-            {
-                boss.TakeDamage(damage);
-            }
-        }
-
+        enemy.TakeDamage(damage);
         Destroy(gameObject);
     }
 

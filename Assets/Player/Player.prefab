@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83814c7eb44c354ea458ec1a3277c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveSpeed: 5
+  moveSpeed: 3
   moveAction: {fileID: 2181648581836094074, guid: d1e078a1c8f2a234c946c30eb0ec1b98, type: 3}
   moveActionName: Move
   cam: {fileID: 0}
@@ -243,6 +243,9 @@ MonoBehaviour:
   sprintAction: {fileID: 4510698031583197949, guid: d1e078a1c8f2a234c946c30eb0ec1b98, type: 3}
   sprintActionName: Sprint
   sprintMultiplier: 1.8
+  footstepClips: []
+  footstepVolume: 1
+  minFootstepInterval: 0.35
   maxStamina: 5
   staminaDrainRate: 1.5
   staminaRegenRate: 1
@@ -370,6 +373,9 @@ MonoBehaviour:
   holdToFire: 0
   shotSound: {fileID: 8300000, guid: 1b145bcffd767854fb0c71c37678ebaa, type: 3}
   shotVolume: 1
+  muzzleFlashSprite: {fileID: 0}
+  muzzleFlashDuration: 0.05
+  muzzleFlashScale: 0.25
   reloadSound: {fileID: 8300000, guid: af63539a5e39c99489395bdea2471f60, type: 3}
   reloadVolume: 1
   fireAction: {fileID: -4605351055447350267, guid: d1e078a1c8f2a234c946c30eb0ec1b98, type: 3}

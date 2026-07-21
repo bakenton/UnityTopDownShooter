@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -6248629114275449574, guid: bb35c422b17ed014bb46d50a2c2351b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -106,13 +106,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4ff2177a1688349a868c977b7804d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  patrolSpeed: 20
+  patrolSpeed: 5
   wanderRadius: 5
   wanderPointReachDistance: 0.5
   timeBetweenWanderPoints: 2
   detectionRadius: 8
   attackRadius: 1.5
-  chaseSpeed: 19
+  chaseSpeed: 9
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 8
+  obstacleCheckDistance: 0.4
   attackInterval: 2
   attackDamage: 20
   contactDamage: 10

@@ -15,6 +15,10 @@ public class Enemy : MonoBehaviour
     public float attackRadius = 1.5f;
     public float chaseSpeed = 3.5f;
 
+    [Header("Navigation")]
+    public LayerMask obstacleMask = ~0;
+    public float obstacleCheckDistance = 0.4f;
+
     [Header("Attack")]
     public float attackInterval = 3f;
     public int attackDamage = 10;
@@ -231,8 +235,8 @@ public class Enemy : MonoBehaviour
 
     void MoveToward(Vector2 target, float speed)
     {
-        Vector2 direction = (target - rb.position).normalized;
-        bool moving = direction.sqrMagnitude > 0.001f;
+        Vector2 desiredDirection = (target - rb.position).normalized;
+        bool moving = desiredDirection.sqrMagnitude > 0.001f;
 
         if (animator == null)
             animator = GetComponent<Animator>();
@@ -241,7 +245,52 @@ public class Enemy : MonoBehaviour
 
         SetAnimatorBool(walkParameter, moving && !isDead);
 
-        rb.MovePosition(Vector2.MoveTowards(rb.position, target, speed * Time.deltaTime));
+        Vector2 movementDirection = GetMovementDirection(desiredDirection);
+        Vector2 nextPosition = rb.position + movementDirection * speed * Time.fixedDeltaTime;
+        rb.MovePosition(nextPosition);
+    }
+
+    Vector2 GetMovementDirection(Vector2 desiredDirection)
+    {
+        if (desiredDirection.sqrMagnitude <= 0.001f)
+            return Vector2.zero;
+
+        if (!IsBlocked(desiredDirection))
+            return desiredDirection;
+
+        Vector2 left = Vector2.Perpendicular(desiredDirection).normalized;
+        Vector2 right = -left;
+
+        bool leftClear = !IsBlocked(left);
+        bool rightClear = !IsBlocked(right);
+
+        if (leftClear && rightClear)
+            return leftClear ? left : right;
+
+        if (leftClear)
+            return left;
+        if (rightClear)
+            return right;
+
+        return Vector2.zero;
+    }
+
+    bool IsBlocked(Vector2 direction)
+    {
+        if (rb == null || direction.sqrMagnitude <= 0.001f)
+            return false;
+
+        RaycastHit2D hit = Physics2D.Raycast(rb.position, direction, obstacleCheckDistance, obstacleMask);
+        if (hit.collider == null)
+            return false;
+
+        if (hit.collider.transform == transform)
+            return false;
+
+        if (hit.collider.CompareTag("Player"))
+            return false;
+
+        return true;
     }
 
     bool ReachedDestination(Vector2 target)

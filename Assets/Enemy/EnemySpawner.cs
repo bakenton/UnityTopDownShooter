@@ -7,6 +7,10 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private GameObject enemyPrefab;
     [SerializeField]
+    private Transform player;
+    [SerializeField]
+    private float activationRadius = 12f;
+    [SerializeField]
     private float spawnFrequency = 2f; // Частота спауна в секундах
     [SerializeField]
     private bool useSpawnProgression = true;
@@ -44,6 +48,15 @@ public class EnemySpawner : MonoBehaviour
             spawnPoints.Add(transform);
         }
 
+        if (player == null)
+        {
+            var playerObject = GameObject.FindWithTag("Player");
+            if (playerObject != null)
+            {
+                player = playerObject.transform;
+            }
+        }
+
         if (enemyPrefab == null)
         {
             Debug.LogError("Enemy Spawner: Enemy prefab не задан!");
@@ -56,6 +69,24 @@ public class EnemySpawner : MonoBehaviour
     {
         if (!isSpawning || enemyPrefab == null)
             return;
+
+        if (player == null)
+        {
+            var playerObject = GameObject.FindWithTag("Player");
+            if (playerObject != null)
+            {
+                player = playerObject.transform;
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        if (Vector2.Distance(transform.position, player.position) > activationRadius)
+        {
+            return;
+        }
 
         if (spawnedEnemiesCount >= maxSpawnedEnemies)
         {
@@ -185,5 +216,8 @@ public class EnemySpawner : MonoBehaviour
                 }
             }
         }
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, activationRadius);
     }
 }
